@@ -24,6 +24,17 @@
   status = 200
   force = true
 
+[[redirects]]
+  from = "/thank-you/"
+  to = "/thank-you.html"
+  status = 200
+  force = true
+[[redirects]]
+  from = "/thank-you"
+  to = "/thank-you.html"
+  status = 200
+  force = true
+
 # Old WordPress addresses
 [[redirects]]
   from = "/home"

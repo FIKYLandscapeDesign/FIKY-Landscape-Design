@@ -315,3 +315,18 @@ p { margin: 0 0 1.25rem; max-width: 65ch; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* Contact form */
+.enquiry-form { display: grid; gap: 1.1rem; margin-top: 1.5rem; }
+.enquiry-form .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }
+.enquiry-form label { display: grid; gap: .4rem; font-size: .85rem; font-weight: 500; color: var(--forest); }
+.enquiry-form input, .enquiry-form select, .enquiry-form textarea {
+  font: inherit; font-weight: 300; font-size: 1rem; color: var(--ink);
+  background: var(--linen); border: 1px solid var(--sand); border-radius: 0;
+  padding: .85rem 1rem; width: 100%;
+}
+.enquiry-form input:focus, .enquiry-form select:focus, .enquiry-form textarea:focus { outline: 2px solid var(--sage); outline-offset: 1px; border-color: var(--forest); }
+.enquiry-form textarea { resize: vertical; }
+.enquiry-form .btn { justify-self: start; cursor: pointer; margin-top: .5rem; }
+.hidden-field { position: absolute; left: -9999px; }
+@media (max-width: 560px) { .enquiry-form .field-row { grid-template-columns: 1fr; } }
